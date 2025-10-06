@@ -5,8 +5,8 @@ local SaveManager = loadstring(game:HttpGetAsync("https://raw.githubusercontent.
 local InterfaceManager = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/1dontgiveaf/Fluent-Renewed/refs/heads/main/Addons/InterfaceManager.luau"))()
  
 local Window = Library:CreateWindow{
-    Title = "Yozo'Hub -- Booga Booga Reborn",
-    SubTitle = "by Yozo'Hub",
+    Title = "CtrlHub -- Booga Booga Reborn",
+    SubTitle = "by CtrlHub",
     TabWidth = 160,
     Size = UDim2.fromOffset(830, 525),
     Resize = true,
@@ -714,9 +714,9 @@ InterfaceManager:BuildInterfaceSection(Tabs.Settings)
 SaveManager:BuildConfigSection(Tabs.Settings)
 Window:SelectTab(1)
 Library:Notify{
-    Title = "Yozo'Hub",
+    Title = "CtrlHub",
     Content = "Loaded, Enjoy!",
     Duration = 8
 }
 SaveManager:LoadAutoloadConfig()
-print("Done! Enjoy Herkle Hub!")
+print("Done! Enjoy CtrlHub!")
