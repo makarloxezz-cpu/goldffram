@@ -1,12 +1,12 @@
-print("Loading CtrlHub")
+print("Loading PhantomHub")
 print("-----------------------------------------")
 local Library = loadstring(game:HttpGetAsync("https://github.com/1dontgiveaf/Fluent-Renewed/releases/download/v1.0/Fluent.luau"))()
 local SaveManager = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/1dontgiveaf/Fluent-Renewed/refs/heads/main/Addons/SaveManager.luau"))()
 local InterfaceManager = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/1dontgiveaf/Fluent-Renewed/refs/heads/main/Addons/InterfaceManager.luau"))()
 
 local Window = Library:CreateWindow{
-    Title = "CtrlHub",
-    SubTitle = "by CtrlHub",
+    Title = "PhantomHub",
+    SubTitle = "by PhantomHub",
     TabWidth = 160,
     Size = UDim2.fromOffset(830, 525),
     Resize = true,
@@ -524,9 +524,9 @@ InterfaceManager:BuildInterfaceSection(Tabs.Settings)
 SaveManager:BuildConfigSection(Tabs.Settings)
 Window:SelectTab(1)
 Library:Notify{
-    Title = "CtrlHub",
+    Title = "PhantomHub",
     Content = "Loaded, Enjoy!",
     Duration = 8
 }
 SaveManager:LoadAutoloadConfig()
-print("Done! Enjoy CtrlHub!")
+print("Done! Enjoy PhantomHub!")
